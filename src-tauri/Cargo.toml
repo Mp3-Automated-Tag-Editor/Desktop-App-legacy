@@ -1,8 +1,8 @@
 [package]
-name = "Automated Mp3 Tag Editor"
+name = "app"
 version = "0.1.0"
-description = "A Tauri desktop app for the Mp3 Automated Tag Editor."
-authors = ["JRS Studios"]
+description = "A Tauri-React App for the Automated Mp3 Tag Editor"
+authors = ["you"]
 license = "MIT"
 repository = ""
 default-run = "app"
