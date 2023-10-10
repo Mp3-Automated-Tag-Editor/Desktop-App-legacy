@@ -4,9 +4,14 @@
 /node_modules
 /.pnp
 .pnp.js
+.env
 
 # testing
 /coverage
+
+# tauri
+/src-tauri/target/
+/src-tauri/Cargo.lock
 
 # production
 /build
