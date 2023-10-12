@@ -1,0 +1,64 @@
+@use '../../scss/abstracts/' as *;
+
+.button {
+    padding: 20px 30px;
+    border: none;
+    width: 100%;
+    font-size: large;
+    border-radius: $borderRadius;
+    border-color: none;
+    background-color: $mainColor;
+    color: $white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.button2 {
+    padding: 20px 30px;
+    border: none;
+    width: 100%;
+    font-size: large;
+    border-radius: $borderRadius;
+    border-color: none;
+    background-color: $white;
+    color: $mainColor;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.button3 {
+    padding: 20px 30px;
+    border: none;
+    width: 100%;
+    font-size: large;
+    border-radius: $borderRadius;
+    border-color: none;
+    background-color: $white;
+    color: $mainColor;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.button:hover {
+    background-color: $light-grey;
+    transition: 300ms ease-in-out;
+}
+
+.button2:hover {
+    background-color: $mainColor;
+    color: $white;
+    transition: 300ms ease-in-out;
+}
+
+.button3:hover {
+    background-color: $light-grey;
+    transition: 300ms ease-in-out;
+}
+
+// .button2:active {
+//     border: 1px;
+//     border-color: $prim-blue;
+// }

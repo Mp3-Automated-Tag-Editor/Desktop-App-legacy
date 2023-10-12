@@ -18,6 +18,12 @@ const sidebarNav = [
     //     text: 'Products'
     // },
     {
+        link: '/download',
+        section: 'download',
+        icon: <i className='bx bx-download'></i>,
+        text: 'Download'
+    },
+    {
         link: '/edit',
         section: 'edit',
         icon: <i className='bx bx-pencil'></i>,

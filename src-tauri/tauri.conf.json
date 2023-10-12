@@ -12,6 +12,28 @@
   },
   "tauri": {
     "allowlist": {
+      "fs": {
+        "all": true,
+        "copyFile": false,
+        "createDir": false,
+        "exists": false,
+        "readDir": true,
+        "readFile": true,
+        "removeDir": false,
+        "removeFile": false,
+        "renameFile": true,
+        "scope": ["**"],
+        "writeFile": true
+      },
+      "path": {
+        "all": true
+      },
+      "shell": {
+        "all": true,
+        "execute": true,
+        "open": true,
+        "sidecar": true
+      },
       "window": {
         "all": true,
         "create": true,
