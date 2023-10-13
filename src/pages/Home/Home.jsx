@@ -7,9 +7,20 @@ import { open } from '@tauri-apps/api/dialog'
 // import Divider from '../../components/divider/Divider'
 import { Transition } from 'react-transition-group'
 import { useNavigate } from 'react-router-dom'
+import { invoke } from '@tauri-apps/api/tauri'
 
 export default function Home() {
     const nv = useNavigate();
+    const [directory, setDirectory] = useState("");
+
+    function startSearch() {
+        if(!directory) {
+            alert("Select koi bhi nahi")
+        } else {
+            // await invoke('set_dir', { path_var: selectedPath });
+        };
+    }
+
     function goToSettings() {
         nv("/settings");
     }
@@ -26,13 +37,14 @@ export default function Home() {
                 multiple: false,
                 defaultPath: 'Downloads',
             });
-            if (selectedPath) setDirectory(selectedPath);
-            else return;
+            if (selectedPath) {
+                setDirectory(selectedPath);
+                invoke('set_dir', { path_var: selectedPath });
+            } else return;
         } catch (error) {
             console.log(error);
         }
     }
-    const [directory, setDirectory] = useState("");
 
     return (
         <DashboardWrapper>
@@ -54,7 +66,7 @@ export default function Home() {
                         </Button>
                     </div>
                     <div className="col-4 mb">
-                        <Button buttonType="button" title="Start Searching!">
+                        <Button buttonType="button" title="Start Searching!" func={startSearch}>
                             Start
                         </Button>
                     </div>

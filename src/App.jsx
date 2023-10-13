@@ -21,8 +21,8 @@ function App() {
         <Routes>
             <Route path="/" element={<MainLayout state={returnCurrentState(location.pathname)} />}>
                 <Route index element={<Home />} />
-                {/* <Route path="search" element={<Blank />} />
-                <Route path="preview" element={<Blank />} /> */}
+                {/* <Route path="set" element={<Set />} />
+                <Route path="preview" element={<Preview />} /> */}
                 <Route path="edit" element={<Blank />} />
                 <Route path="download" element={<Blank />} />
                 <Route path="settings" element={<Blank />} />
