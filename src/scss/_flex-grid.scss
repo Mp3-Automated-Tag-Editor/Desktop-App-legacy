@@ -3,11 +3,12 @@
 
 .row {
     display: flex;
+    flex-grow: inherit;
     flex-wrap: wrap;
     margin: 0 math.div($spacing, 2) * -1;
 
     @include tablet {
-        margin: 0 math.div($mobileSpacing, 2) * -1;
+        margin: 0 math.div($mobileSpacing, 1.8) * -1;
     }
 }
 
@@ -19,8 +20,8 @@
     }
 }
 
-@for $i from 1 through 12 {
-    $v: math.div($i, 12) * 100;
+@for $i from 1 through 24 {
+    $v: math.div($i, 24) * 100;
     .col-#{$i} {
         width: $v*1%;
     }

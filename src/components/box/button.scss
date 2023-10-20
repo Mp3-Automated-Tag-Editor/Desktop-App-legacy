@@ -29,7 +29,8 @@
 }
 
 .button3 {
-    padding: 20px 30px;
+    padding: 15px 15px;
+    // margin: 10px;
     border: none;
     width: 100%;
     font-size: large;
@@ -37,6 +38,25 @@
     border-color: none;
     background-color: $white;
     color: $mainColor;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.margin {
+    margin: 5px;
+}
+
+.button4 {
+    padding: 30px 30px;
+    text-align: justify;
+    border: none;
+    width: 100%;
+    font-size: large;
+    border-radius: $borderRadius;
+    border-color: none;
+    background-color: $white;
+    color: $txtColor;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     cursor: pointer;
     transition: 200ms ease-in-out;
@@ -55,6 +75,12 @@
 
 .button3:hover {
     background-color: $light-grey;
+    transition: 300ms ease-in-out;
+}
+
+.button4:hover {
+    background-color: $sec-red;
+    color: $white;
     transition: 300ms ease-in-out;
 }
 

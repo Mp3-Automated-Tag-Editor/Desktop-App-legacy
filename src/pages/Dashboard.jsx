@@ -32,23 +32,23 @@ const Dashboard = () => {
         <DashboardWrapper>
             <DashboardWrapperMain>
                 <div className="row">
-                    <div className="col-8 col-md-12">
+                    <div className="col-16 col-md-24">
                         <div className="row">
                             {
                                 data.summary.map((item, index) => (
-                                    <div key={`summary-${index}`} className="col-6 col-md-6 col-sm-12 mb">
+                                    <div key={`summary-${index}`} className="col-12 col-md-12 col-sm-24 mb">
                                         <SummaryBox item={item} />
                                     </div>
                                 ))
                             }
                         </div>
                     </div>
-                    <div className="col-4 hide-md">
+                    <div className="col-8 hide-md">
                         <SummaryBoxSpecial item={data.revenueSummary} />
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-12">
+                    <div className="col-24">
                         <Box>
                             <RevenueByMonthsChart />
                         </Box>
