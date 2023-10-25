@@ -26,7 +26,7 @@ export default function Home() {
         if (!directory) {
             alert("Select koi bhi nahi")
         } else {
-            // await invoke('set_dir', { path_var: selectedPath });
+            invoke('set_db', { path_var: directory });
         };
     }
 
@@ -88,7 +88,6 @@ export default function Home() {
             });
             if (selectedPath) {
                 setDirectory(selectedPath);
-                invoke('set_dir', { path_var: selectedPath });
             } else return;
         } catch (error) {
             console.log(error);
