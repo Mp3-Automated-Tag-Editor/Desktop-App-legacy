@@ -5,6 +5,7 @@ import Blank from './pages/Blank'
 import Dashboard from './pages/Dashboard'
 import MainLayout from './layout/MainLayout'
 import Home from './pages/Home/Home'
+import EditPage from './pages/Edit/Edit'
 
 function App() {
     const location = useLocation();
@@ -23,7 +24,7 @@ function App() {
                 <Route index element={<Home />} />
                 {/* <Route path="set" element={<Set />} />
                 <Route path="preview" element={<Preview />} /> */}
-                <Route path="edit" element={<Blank />} />
+                <Route path="edit" element={<EditPage />} />
                 <Route path="download" element={<Blank />} />
                 <Route path="settings" element={<Blank />} />
                 <Route path="about" element={<Dashboard />} />
