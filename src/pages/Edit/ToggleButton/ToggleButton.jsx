@@ -9,7 +9,7 @@ function ToggleButton({handleVieworEdit}) {
   };
 
   return (
-    <div style={{display:"flex",flexDirection:"row" , justifyContent:"center",width:"30vw", marginBottom:"5px"}}>
+    <div style={{display:"flex",flexDirection:"row" , justifyContent:"center", marginBottom:"5px"}}>
       <button
         className={`button ${activeButton === 'view' ? 'active' : ''}`}
         onClick={() => handleButtonClick('view')}

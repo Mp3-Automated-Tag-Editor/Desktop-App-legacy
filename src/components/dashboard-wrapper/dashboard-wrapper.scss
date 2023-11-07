@@ -8,7 +8,7 @@
 
     &__main {
         flex-grow: 1;
-        padding-right: $sideBarWidth;
+        padding-right: $sideBarRightWidth;
 
         @include tablet {
             padding-right: 0;
@@ -16,10 +16,10 @@
     }
 
     &__right {
-        width: $sideBarWidth;
+        width: $sideBarRightWidth;
         background-color: $mainBg;
         height: 100vh;
-        padding: $spacing;
+        padding: $spacingSideBar;
         border-top-left-radius: $borderRadius;
         border-bottom-left-radius: $borderRadius;
         position: fixed;

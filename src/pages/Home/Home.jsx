@@ -114,7 +114,7 @@ export default function Home() {
                         </Button>
                     </div>
                     <div className="col-8 mb">
-                        <Button buttonType="button" title="Start Searching!" func={startSearch}>
+                        <Button buttonType="button5" title="Start Searching!" func={startSearch}>
                             Start
                         </Button>
                     </div>
@@ -234,7 +234,8 @@ export default function Home() {
 
             </DashboardWrapperMain>
             <DashboardWrapperRight>
-                {/* Preview Screen Model (Spotify type) */}
+                <h1>Live Updates</h1>
+                <p>Can be stuff like GitHub updates, links to articles, etc</p>
             </DashboardWrapperRight>
         </DashboardWrapper>
     )

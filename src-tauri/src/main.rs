@@ -36,9 +36,9 @@ async fn db_populate(path_var: String) -> Result<()> {
         // let tag = Tag::read_from_path(path.as_ref())?;
         let file_name = path.as_ref().unwrap().file_name();
         let path_value = path.as_ref().unwrap().path();
-        // println!("File Name: {:?}", file_name);
-        // println!("Path: {}", path_value.display());
-        // println!("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-");
+        
+        //Dont send into DB until API request has been made, then send ALL data. After that, send result to frontend - if successfull - begin preview screen, else show error
+
         let _ = conn.execute("INSERT INTO mp3_table_data (
             file_name, 
             path, 

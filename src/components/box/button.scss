@@ -1,6 +1,6 @@
 @use '../../scss/abstracts/' as *;
 
-.button {
+.button5 {
     padding: 20px 30px;
     border: none;
     width: 100%;
@@ -62,7 +62,7 @@
     transition: 200ms ease-in-out;
 }
 
-.button:hover {
+.button5:hover {
     background-color: $light-grey;
     transition: 300ms ease-in-out;
 }
